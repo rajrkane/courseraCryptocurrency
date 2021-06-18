@@ -13,7 +13,7 @@ public class MaxFeeTxHandler {
   }
 
   private Transaction[] sortTxsByFee(Transaction[] transactions) {
-    Arrays.sort(transactions, (tx1, tx2) -> Double.compare(getTxFee(tx1), getTxFee(tx2)));
+    Arrays.sort(transactions, (tx1, tx2) -> Double.compare(getTxFee(tx2), getTxFee(tx1)));
     return transactions;
   }
 
